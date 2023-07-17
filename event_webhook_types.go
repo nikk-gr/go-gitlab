@@ -789,6 +789,7 @@ type PipelineEvent struct {
 	ObjectAttributes struct {
 		ID             int      `json:"id"`
 		IID            int      `json:"iid"`
+		Name           string   `json:"name"`
 		Ref            string   `json:"ref"`
 		Tag            bool     `json:"tag"`
 		SHA            string   `json:"sha"`
@@ -801,11 +802,11 @@ type PipelineEvent struct {
 		FinishedAt     string   `json:"finished_at"`
 		Duration       int      `json:"duration"`
 		QueuedDuration int      `json:"queued_duration"`
-		URL            string   `json:"url"`
 		Variables      []struct {
 			Key   string `json:"key"`
 			Value string `json:"value"`
 		} `json:"variables"`
+		URL string `json:"url"`
 	} `json:"object_attributes"`
 	MergeRequest struct {
 		ID                  int    `json:"id"`
