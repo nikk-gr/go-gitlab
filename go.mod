@@ -1,4 +1,4 @@
-module github.com/nikitagryaznov/go-gitlab
+module github.com/nikk-gr/go-gitlab
 
 go 1.18
 
